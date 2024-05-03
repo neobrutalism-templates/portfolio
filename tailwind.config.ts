@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import tailwindAnimate from 'tailwindcss-animate'
 
 const config: Config = {
   content: [
@@ -9,9 +10,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: '#daf5f0',
-        main: '#c4a1ff',
-        mainAccent: '#9e66ff',
+        bg: '#fff4e0',
+        main: '#FD9745',
+        mainAccent: '#fc7303',
       },
       borderRadius: {
         base: '5px',
@@ -27,8 +28,11 @@ const config: Config = {
         base: '500',
         heading: '700',
       },
+      screens: {
+        w450: { raw: '(max-width: 450px)' },
+      },
     },
   },
-  plugins: [],
+  plugins: [tailwindAnimate],
 }
 export default config

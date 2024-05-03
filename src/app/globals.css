@@ -7,3 +7,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  @apply bg-bg;
+}
