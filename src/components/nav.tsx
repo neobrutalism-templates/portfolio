@@ -23,7 +23,7 @@ export default function Nav() {
   ]
 
   return (
-    <div className="fixed left-0 top-5 w-full">
+    <div className="fixed left-0 top-5 z-50 w-full">
       <nav className="mx-auto flex w-max gap-5 rounded-base border-2 border-black bg-main p-2.5 px-5 text-sm font-base shadow-base sm:text-base">
         {links.map((link) => {
           return (
