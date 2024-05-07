@@ -48,6 +48,10 @@ Make sure to put `/` + name of the picture that's inside public folder. e.g. you
 previewImage: '/my-project.png'
 ```
 
+##### Image aspect ratio
+
+Inside `app/work/page.tsx`  `previewImage` is wrapped inside AspectRatio component. Change the `ratio` prop so it suits your needs (default preview images are 710 x 260, so I set the ratio to be `71 / 26`).
+
 #### Updating skills
 
 I need to clarify how to edit skills since it looks confusing at first. Inside the `skills.ts` inside the `SKILLS` array, each object in the array is a field of skills (can be anything: frontend, backend, devops, design etc). Each object has a `field` prop which is the field name. Also, each object has a `skills` array where each array member has a `skill` value (used as tooltip value), and `icon` is the icon that will be displayed.
