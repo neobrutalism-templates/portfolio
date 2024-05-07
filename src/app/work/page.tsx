@@ -1,4 +1,5 @@
 import PROJECTS from '@/data/projects'
+import { AspectRatio } from '@/components/ui/aspect-ratio'
 
 export default function Work() {
   return (
@@ -12,11 +13,13 @@ export default function Work() {
               className="rounded-base border-2 border-black bg-main p-4 shadow-base sm:p-5"
               key={id}
             >
-              <img
-                className="rounded-base border-2 border-black shadow-base"
-                src={`${project.previewImage}`}
-                alt={project.name}
-              />
+              <AspectRatio ratio={71 / 26}>
+                <img
+                  className="rounded-base border-2 border-black shadow-base"
+                  src={`${project.previewImage}`}
+                  alt={project.name}
+                />
+              </AspectRatio>
 
               <div className="mt-5 font-base">
                 <h2 className="text-xl font-heading sm:text-2xl">
