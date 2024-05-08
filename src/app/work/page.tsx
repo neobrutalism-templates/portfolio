@@ -13,9 +13,12 @@ export default function Work() {
               className="rounded-base border-2 border-black bg-main p-4 shadow-base sm:p-5"
               key={id}
             >
-              <AspectRatio ratio={71 / 26}>
+              <AspectRatio
+                className="!-bottom-[2px] rounded-base border-2 border-black shadow-base"
+                ratio={71 / 26}
+              >
                 <img
-                  className="rounded-base border-2 border-black shadow-base"
+                  className="w-full rounded-base"
                   src={`${project.previewImage}`}
                   alt={project.name}
                 />
