@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply bg-bg;
+  @apply dark:bg-darkBg bg-bg;
 }
 
 body {

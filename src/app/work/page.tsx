@@ -10,11 +10,11 @@ export default function Work() {
         {PROJECTS.map((project, id) => {
           return (
             <div
-              className="rounded-base border-2 border-black bg-main p-4 shadow-base sm:p-5"
+              className="border-border dark:border-darkBorder shadow-light dark:shadow-dark rounded-base border-2 bg-main p-4 sm:p-5"
               key={id}
             >
               <AspectRatio
-                className="!-bottom-[2px] rounded-base border-2 border-black shadow-base"
+                className="border-border dark:border-darkBorder shadow-light dark:shadow-dark !-bottom-[2px] rounded-base border-2"
                 ratio={71 / 26}
               >
                 <img
@@ -24,7 +24,7 @@ export default function Work() {
                 />
               </AspectRatio>
 
-              <div className="mt-5 font-base">
+              <div className="text-text mt-5 font-base">
                 <h2 className="text-xl font-heading sm:text-2xl">
                   {project.name}
                 </h2>
@@ -33,14 +33,14 @@ export default function Work() {
 
                 <div className="mt-8 grid grid-cols-2 gap-5">
                   <a
-                    className="cursor-pointer rounded-base border-2 border-black bg-white px-4 py-2 text-center text-sm font-base shadow-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none sm:text-base"
+                    className="border-border dark:border-darkBorder shadow-light dark:shadow-dark cursor-pointer rounded-base border-2 bg-white px-4 py-2 text-center text-sm font-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none sm:text-base dark:hover:shadow-none"
                     href={project.liveLink}
                     target="_blank"
                   >
                     Visit
                   </a>
                   <a
-                    className="cursor-pointer rounded-base border-2 border-black bg-white px-4 py-2 text-center text-sm font-base shadow-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none sm:text-base"
+                    className="border-border dark:border-darkBorder shadow-light dark:shadow-dark cursor-pointer rounded-base border-2 bg-white px-4 py-2 text-center text-sm font-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none sm:text-base dark:hover:shadow-none"
                     href={project.repoUrl}
                     target="_blank"
                   >
