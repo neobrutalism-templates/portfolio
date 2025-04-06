@@ -24,17 +24,15 @@ export default function Nav() {
   ]
 
   return (
-    <div className="fixed left-0 top-5 z-50 w-full">
-      <nav className="text-text border-border dark:border-darkBorder shadow-light dark:shadow-dark mx-auto flex w-max gap-5 rounded-base border-2 bg-main p-2.5 px-5 text-sm font-base sm:text-base w450:gap-4">
+    <div className="fixed top-5 left-0 z-50 w-full">
+      <nav className="text-main-foreground border-border shadow-shadow rounded-base bg-main font-base w450:gap-4 mx-auto flex w-max gap-5 border-2 p-2.5 px-5 text-sm sm:text-base">
         {links.map((link) => {
           return (
             <Link
               key={link.path}
               className={clsx(
-                'hover:border-border dark:hover:border-darkBorder rounded-base border-2 px-2 py-1 transition-colors',
-                path === link.path
-                  ? 'border-border dark:border-darkBorder'
-                  : 'border-transparent',
+                'hover:border-border rounded-base border-2 px-2 py-1 transition-colors',
+                path === link.path ? 'border-border' : 'border-transparent',
               )}
               href={link.path}
             >
