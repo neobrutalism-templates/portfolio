@@ -3,7 +3,7 @@ import { AspectRatio } from '@/components/ui/aspect-ratio'
 
 export default function Work() {
   return (
-    <div>
+    <div className="min-h-[calc(100vh-12rem)]">
       <h1 className="font-heading mb-8 text-2xl sm:text-4xl">Work</h1>
 
       <div className="flex flex-col gap-5">

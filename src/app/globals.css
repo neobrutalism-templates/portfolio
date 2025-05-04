@@ -4,26 +4,36 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(95.38% 0.0357 72.89);
-  --secondary-background: oklch(100% 0 0);
-  --foreground: oklch(0% 0 0);
-  --main-foreground: oklch(0% 0 0);
-  --main: oklch(72.27% 0.1894 50.19);
-  --border: oklch(0% 0 0);
-  --ring: oklch(0% 0 0);
-  --overlay: oklch(0% 0 0 / 0.8);
+  --background: #ffffff;
+  --secondary-background: #f5f5f5;
+  --foreground: #000000;
+  --main-foreground: #000000;
+  --main: #e5aefc;
+  --border: #000000;
+  --ring: #000000;
+  --overlay: rgba(0, 0, 0, 0.8);
   --shadow: 4px 4px 0px 0px var(--border);
 }
 
 .dark {
-  --background: oklch(26.86% 0.0327 60.06);
-  --secondary-background: oklch(23.93% 0 0);
-  --foreground: oklch(92.49% 0 0);
-  --main-foreground: oklch(0% 0 0);
-  --main: oklch(67.56% 0.1796 49.61);
-  --border: oklch(0% 0 0);
-  --ring: oklch(100% 0 0);
-  --shadow: 4px 4px 0px 0px var(--border);
+  --background: #1c1b23;
+  --secondary-background: #2a2935;
+  --foreground: #ffffff;
+  --main-foreground: #ffffff;
+  --main: #d2a4ff;
+  --border: #ffffff;
+  --ring: #ffffff;
+  --overlay: rgba(255,255,255,0.06);
+  --shadow: 4px 4px 0px 0px rgba(255,255,255,0.7);
+}
+
+/* Add styles for links */
+a {
+  color: var(--foreground);
+}
+
+.dark a {
+  color: #ffffff;
 }
 
 @theme inline {
@@ -82,4 +92,38 @@ body::-webkit-scrollbar-thumb {
   body {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
+}
+
+/* Neobrutalist button with black shadow behind */
+.neobrutal-btn {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.1s;
+}
+.neobrutal-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 5px; /* match your button's rounded-base */
+  background: black;
+  z-index: -1;
+  transform: translate(8px, 8px); /* adjust for your shadow size */
+  transition: inherit;
+}
+.neobrutal-btn:hover {
+  transform: translate(8px, 8px);
+}
+
+/* Goodreads book grid styles */
+.gr_grid_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.gr_grid_book_container {
+  float: left;
+  width: 39px;
+  height: 60px;
+  padding: 0px 0px;
+  overflow: hidden;
 }

@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "security-check": "npm audit"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^9.4.1",
@@ -16,21 +17,21 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.487.0",
-    "next": "15.2.4",
+    "next": "^15.3.1",
     "next-themes": "^0.3.0",
     "next-view-transitions": "^0.1.1",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tailwind-merge": "^3.1.0",
     "tw-animate-css": "^1.2.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.3",
     "@types/node": "^20",
-    "@types/react": "19.1.0",
-    "@types/react-dom": "19.1.1",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "eslint": "^8",
-    "eslint-config-next": "15.2.4",
+    "eslint-config-next": "^14.1.0",
     "eslint-config-prettier": "^9.1.0",
     "postcss": "^8",
     "prettier": "^3.2.5",
@@ -41,8 +42,8 @@
   "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a",
   "pnpm": {
     "overrides": {
-      "@types/react": "19.1.0",
-      "@types/react-dom": "19.1.1"
+      "@types/react": "^18.2.0",
+      "@types/react-dom": "^18.2.0"
     }
   }
 }

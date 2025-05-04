@@ -8,7 +8,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'John Doe',
+  title: 'Nufar Galin',
 }
 
 export default function RootLayout({
@@ -19,12 +19,18 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <html suppressHydrationWarning lang="en">
+        <head>
+          <meta
+            httpEquiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:;"
+          />
+        </head>
         <body className={montserrat.className}>
           <ThemeProvider attribute="class" disableTransitionOnChange>
             <Nav />
-            <div className="text-foreground mx-auto w-[750px] max-w-full px-5 pt-28 pb-10">
+            <main className="text-foreground mx-auto w-[750px] max-w-full px-5 pt-28 pb-10 min-h-screen">
               {children}
-            </div>
+            </main>
           </ThemeProvider>
         </body>
       </html>
