@@ -1,62 +1,91 @@
-<img src="public/preview.png" />
+# Nufar's Portfolio
 
-# Portfolio
+A modern portfolio website built with Next.js and Tailwind CSS, featuring a clean and professional design.
 
-Portfolio is a neobrutalism-styled nextjs tailwind template for portfolios.
+## Features
 
-## Get started
+- **About**: Personal introduction and background
+- **Learning**: A collection of books and learning resources
+- **Thought**: Personal blog and thoughts section
+- **Work**: Showcase of projects and professional experience
+- **Skills**: Technical skills and expertise
+- **Contact**: Professional contact information and social links
 
-[Create a new repo](https://github.com/neobrutalism-templates/portfolio/generate) from this template.
+## Tech Stack
+
+- Next.js 15.3.1
+- React
+- Tailwind CSS
+- TypeScript
+- Simple Icons for social media and technology icons
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v22.14.0 or later)
+- npm or pnpm package manager
 
 ### Installation
 
-This template uses `pnpm` package manager so make sure you have it installed.
-
-To install all dependencies run:
-
+1. Clone the repository:
 ```bash
-pnpm i
+git clone [your-repo-url]
 ```
 
-To run the app locally:
-
+2. Install dependencies:
 ```bash
+npm install
+# or
+pnpm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+# or
 pnpm run dev
 ```
 
-### Config
+The site will be available at `http://localhost:3000` (or the next available port if 3000 is in use).
 
-- Inside `layout.tsx` update the metadata
-- Inside `page.tsx` update the content
-- Update the `favicon.ico`
+## Project Structure
 
-### Content config
+- `/src/app`: Main application pages and layouts
+- `/src/components`: Reusable React components
+- `/public`: Static assets and images
+- `/src/data`: Content data files
 
-#### Links on the home page
+## Configuration
 
-To update the links on the home page go to `src/components/links.tsx` and inside `links` array add or remove objects. Each object has 2 properties, `icon`, and `href`. `href` is self-explanatory, and inside `icon` you'll put an icon imported from `@icons-pack/react-simple-icons`. Visit [simpleicons.org](https://simpleicons.org/) to see all the icons. Import them by adding `Si` prefix to their name as I imported them in `links` component.
+### Updating Content
 
-#### Updating the rest of the content
+1. **About Section**: Edit `src/app/about/page.tsx`
+2. **Learning Section**: Edit `src/app/learning/page.tsx`
+3. **Thought Section**: Edit `src/app/thought/page.tsx`
+4. **Work Section**: Edit `src/app/work/page.tsx`
 
-Inside `data` folder you have the rest of the content you can edit.
+### Social Links
 
-#### Updating the `previewImage` in `projects.ts`
+Update social media links in `src/components/links.tsx`. Each link object should have:
+- `icon`: Icon component from `@icons-pack/react-simple-icons`
+- `href`: URL to your social profile
 
-Make sure to put `/` + name of the picture that's inside public folder. e.g. you have a `my-project.png` picture inside `public` folder, you'll type:
+### Skills
 
-```ts
-previewImage: '/my-project.png'
-```
+Update skills in `src/data/skills.ts`. Each skill category should have:
+- `field`: Category name
+- `skills`: Array of skills with `skill` (name) and `icon` properties
 
-##### Image aspect ratio
+## Development
 
-Inside `app/work/page.tsx` `previewImage` is wrapped inside AspectRatio component. Change the `ratio` prop so it suits your needs (default preview images are 710 x 260, so I set the ratio to be `71 / 26`).
+The project uses Next.js 15.3.1 with the following features:
+- Server-side rendering
+- Static site generation
+- TypeScript support
+- Tailwind CSS for styling
+- Modern ES modules
 
-#### Updating skills
+## Styling
 
-I need to clarify how to edit skills since it looks confusing at first. Inside the `skills.ts` inside the `SKILLS` array, each object in the array is a field of skills (can be anything: frontend, backend, devops, design etc). Each object has a `field` prop which is the field name. Also, each object has a `skills` array where each array member has a `skill` value (used as tooltip value), and `icon` is the icon that will be displayed.
-You update them the same way you'd update links on the home page.
-
-### Styling
-
-To change the styling visit [styling docs](https://neobrutalism.dev/styling), and copy the desired styling to your css like it's shown in the styling docs.
+This project uses styling components from [Neobrutalism](https://neobrutalism.dev/), a collection of modern UI components with a distinctive design aesthetic. Visit their [styling documentation](https://neobrutalism.dev/styling) for more information about the design system.
