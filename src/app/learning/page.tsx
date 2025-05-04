@@ -16,10 +16,7 @@ export default function Learning() {
               {' '}– to keep on top of daily news in a few minutes a day.
             </li>
             <li>
-              <span className="font-semibold">Lenny's Newsletter</span> – for the top product management interviews and ongoings.
-            </li>
-            <li>
-              <span className="font-semibold">Paweł Huryn's product compass</span> – thoughtful in-depth articles that feel less buzz-wordy than others, and deliver specific value. A great place to
+              <a href="https://www.productcompass.pm/" target="_blank" rel="noopener noreferrer" className="text-main-foreground font-semibold hover:underline">Product Compass by Paweł Huryn</a> – thoughtful in-depth articles that feel less buzz-wordy than others, and deliver specific value.
             </li>
             <li>
               <a href="https://news.yuezhao.coach?r=44rsh" target="_blank" rel="noopener noreferrer" className="text-main-foreground hover:underline font-semibold">The Uncommon Executive by Yue Zhao</a> – great articles about leadership in tech.
@@ -35,7 +32,7 @@ export default function Learning() {
         <h2 className="text-2xl font-bold">Recent Reading</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <a 
-            href="https://www.goodreads.com/review/show/7472065930"
+            href="https://www.goodreads.com/book/show/3828902-thinking-in-systems"
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 border-2 border-black dark:border-white rounded-lg flex gap-4 bg-white dark:bg-black shadow-shadow h-[160px]"
@@ -65,7 +62,7 @@ export default function Learning() {
           </a>
 
           <a 
-            href="https://www.goodreads.com/review/show/6804559772"
+            href="https://www.goodreads.com/book/show/58261060-four-thousand-weeks"
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 border-2 border-black dark:border-white rounded-lg flex gap-4 bg-white dark:bg-black shadow-shadow h-[160px]"
@@ -95,7 +92,7 @@ export default function Learning() {
           </a>
 
           <a 
-            href="https://www.goodreads.com/review/show/7472063167"
+            href="https://www.goodreads.com/book/show/204884957-how-big-things-get-done"
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 border-2 border-black dark:border-white rounded-lg flex gap-4 bg-white dark:bg-black shadow-shadow h-[160px]"
@@ -125,7 +122,7 @@ export default function Learning() {
           </a>
 
           <a 
-            href="https://www.goodreads.com/review/show/7363443928"
+            href="https://www.goodreads.com/book/show/52963508-the-science-of-storytelling"
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 border-2 border-black dark:border-white rounded-lg flex gap-4 bg-white dark:bg-black shadow-shadow h-[160px]"
@@ -155,7 +152,7 @@ export default function Learning() {
           </a>
 
           <a 
-            href="https://www.goodreads.com/review/show/7392744364"
+            href="https://www.goodreads.com/book/show/218319936-the-nvidia-way"
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 border-2 border-black dark:border-white rounded-lg flex gap-4 bg-white dark:bg-black shadow-shadow h-[160px]"

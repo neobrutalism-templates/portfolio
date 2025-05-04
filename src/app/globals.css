@@ -18,13 +18,14 @@
 .dark {
   --background: #1c1b23;
   --secondary-background: #2a2935;
-  --foreground: #ffffff;
-  --main-foreground: #ffffff;
-  --main: #d2a4ff;
-  --border: #ffffff;
-  --ring: #ffffff;
+  --foreground: #e2e2e3;
+  --main-foreground: #e2e2e3;
+  --main: #490ea1;
+  --border: #000000;
+  --ring: #000000;
   --overlay: rgba(255,255,255,0.06);
-  --shadow: 4px 4px 0px 0px rgba(255,255,255,0.7);
+  --shadow: 4px 4px 0px 0px #000000;
+  --nav-background: #1c0252;
 }
 
 /* Add styles for links */
