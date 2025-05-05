@@ -199,7 +199,7 @@ export default function Learning() {
                 className="w-14 h-14 object-cover rounded"
               />
               <span className="text-main-foreground font-semibold text-lg block">
-                Lenny's Podcast
+                Lenny&apos;s Podcast
               </span>
             </a>
             <a

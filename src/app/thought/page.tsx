@@ -23,7 +23,7 @@ export default function Thought() {
               My 2024 in Business Books: An Overview with Top 10 Recommendations
             </h2>
 
-            <p className="mt-2">A curated list of the most impactful business books I've read this year, with personal insights and recommendations for different interests and needs.</p>
+            <p className="mt-2">A curated list of the most impactful business books I&apos;ve read this year, with personal insights and recommendations for different interests and needs.</p>
 
             <div className="mt-4 text-sm text-main-foreground">
               <span>January 2025</span>

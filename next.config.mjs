@@ -22,8 +22,7 @@ const nextConfig = {
     ]
   },
   // Add this to help with development
-  reactStrictMode: true,
-  swcMinify: true
+  reactStrictMode: true
 }
 
 export default nextConfig 
