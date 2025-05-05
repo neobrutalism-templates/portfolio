@@ -12,15 +12,6 @@ export default function About() {
         </p>
       </div>
 
-      <div className="mb-10">
-        <a
-          href="mailto:hello@nufargalin.com"
-          className="border-2 border-border rounded-base p-2 bg-[#74fbdb] dark:bg-[#05a393] shadow-shadow w-48 max-w-xs flex-shrink-0 transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none text-foreground font-base text-center block text-sm sm:text-base"
-        >
-          Work with me
-        </a>
-      </div>
-
       <div className="mb-16">
         <Links />
       </div>
