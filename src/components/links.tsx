@@ -6,10 +6,10 @@ import {
 
 export default function Links() {
   const links: { icon: IconType; href: string }[] = [
-    {
-      icon: SiGmail,
-      href: 'mailto:hello@nufargalin.com',
-    },
+    // {
+    //   icon: SiGmail,
+    //   href: 'mailto:hello@nufargalin.com',
+    // },
     {
       icon: SiLinkedin,
       href: 'https://www.linkedin.com/in/nufarg/',
