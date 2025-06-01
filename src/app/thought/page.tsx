@@ -14,7 +14,7 @@ export default function Thought() {
           >
             <img
               className="rounded-base max-h-full max-w-full object-contain"
-              src="/vibe-coding-article.png"
+              src="/vibe-coding-article-compressed.jpg"
               alt="Vibe coding a personal website article illustration"
             />
           </AspectRatio>
