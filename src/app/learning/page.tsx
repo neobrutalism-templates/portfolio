@@ -188,7 +188,7 @@ export default function Learning() {
         <div className="text-base sm:text-lg">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a
-              href="https://open.spotify.com/show/2dR1MUZEHCOnz1LVfNac0j?si=906fa740205d4c5b"
+              href="https://www.lennysnewsletter.com/podcast"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 border-2 border-border rounded-lg flex gap-4 bg-main shadow-shadow flex items-center h-[100px] cursor-pointer"
@@ -215,6 +215,21 @@ export default function Learning() {
               />
               <span className="text-main-foreground font-semibold text-lg block">
                 How I AI
+              </span>
+            </a>
+            <a
+              href="https://www.leahtharin.com/p/the-productea-with-leah"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 border-2 border-border rounded-lg flex gap-4 bg-main shadow-shadow flex items-center h-[100px] cursor-pointer"
+            >
+              <img
+                src="/productea-podcast.jpg"
+                alt="ProducTea podcast cover"
+                className="w-14 h-14 object-cover rounded"
+              />
+              <span className="text-main-foreground font-semibold text-lg block">
+                ProducTea with Leah
               </span>
             </a>
           </div>
